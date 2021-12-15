@@ -10,7 +10,7 @@ label straightAndNarrow2Start:
             xpos -0.0
         cmax "I GOT IT! I GOT IT!"
         hide cmax with dissolve
-        "crash crash crash crash"
+        play sound "audio/sounds/crashwall.mp3"
         scene straightAndNarrow2 background with hpunch
         show sam serious flip with dissolve:
             xpos 0.0
@@ -40,6 +40,8 @@ label straightAndNarrow2Start:
         hide cmax
         hide sam
         with dissolve
+        play music "audio/music/02 The Office.mp3"
+        show screen notification("The Office - Jared Emerson-Johnson")
         $ straightAndNarrow2Started = True
     else:
         scene straightAndNarrow2 background with dissolve
@@ -152,6 +154,7 @@ label straightAndNarrow2Tardis:
     sam "Maybe it's a clue of the case the commissioner wants us to investigate"
     show sam suspicious flip with dissolve
     sam "But we still don't know where the informant is"
+    stop music
     angela "Hello?"
     angela "Freelance Police?"
     show sam surprised flip with dissolve
@@ -159,10 +162,11 @@ label straightAndNarrow2Tardis:
     show cmax excited flip with dissolve
     cmax "It came from the blue box"
     angela "I was sent by the commissioner"
-    show sam serious flip with dissolve:
+    show sam serious flip:
         xpos 0.0
-    show cmax excited flip with dissolve:
+    show cmax excited flip:
         xpos 0.4
+    with dissolve
     sam "Are you the informant?"
     show cmax surprise flip with dissolve
     cmax "The blue box is the informant?"
@@ -174,6 +178,7 @@ label straightAndNarrow2Tardis:
     angela "Now... can you..."
     show cmax excited flip with dissolve
     cmax "What it says Sam?!"
+    play music "audio/music/02 The Office.mp3"
     show sam neutral with dissolve
     sam "It says there some dimensional related troubles in our neighborhood little buddy"
     show cmax neutral flip with dissolve

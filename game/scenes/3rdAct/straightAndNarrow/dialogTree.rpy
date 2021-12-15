@@ -159,7 +159,7 @@ label straightAndNarrow3Office:
             hide cmax
             with dissolve
             angela "Anddddddd"
-            "* POP! *"
+            play music "audio/sounds/alarm.mp3"
             "ALARM SOUNDS"
             show angela neutral flip with dissolve:
                 xpos 0.5
@@ -170,11 +170,14 @@ label straightAndNarrow3Office:
             show cmax neutral flip with dissolve:
                 xpos 0.5
             cmax "Everyday we learn something new about ourselves Sam"
+            stop music fadeout 3
             show superball neutral with dissolve:
                 xpos 0.0
             superball "Ma'am, we already spoke about thi..."
             superball "..."
             superball "This is extremely worrisome"
+            play music "audio/music/03 Good Sam, Bad Max.mp3"
+            show screen notification("Good Sam, Bad Max - Jared Emerson-Johnson")
             show sam neutral with dissolve:
                 xpos 0.2
             sam "Max, Angela, can you wait outside for a moment?"
@@ -234,8 +237,10 @@ label straightAndNarrow3Office:
             show angela thinking flip with dissolve
             angela "If it make you feel any better"
             angela "I can leave and you can tell Sam I had an emergency at the police headquarters"
+            stop music
             show cmax surprise with dissolve
             cmax "What?"
+            play music "audio/music/Life is for Living Bass.mp3"
             cmax "Really?"
             show angela well flip with dissolve
             angela "To be honest, my lack of opportunity in this whole situation is making me anxious"
@@ -244,22 +249,34 @@ label straightAndNarrow3Office:
             cmax "Do you really have..."
             show angela neutral flip with dissolve
             angela "You could say that"
+            stop music
+            play sound "audio/sounds/punch1.mp3"
             "* THUMP *"
-            show cmax neutral flip with dissolve
+            show cmax excited flip
+            show angela surprised flip
+            with dissolve
             angela "UH?!!"
             cmax "What is happening inside?"
             cmax "Wait..."
             cmax "Is he...."
-            show cmax neutral flip:
+            play sound "audio/sounds/shot.mp3"
+            show cmax excited flip:
                 xpos -0.1
-            show angela neutral flip:
+            show angela surprised flip:
                 xpos 0.1
             with dissolve
-            "EHHHHHHHHHHHHHHHHHHHHHHH"
+            pause(0.5)
+            play sound "audio/sounds/crashwall.mp3"
+            pause(0.5)
+            angela "EHHHHHHHHHHHHHHHHHHHHHHH"
             cmax "He has the size to pull it off though"
             angela "I don't think he's doing it for that"
+            play music "audio/music/Life is for Living Intruments.mp3"
+            show angela proud flip:
+                xpos 0.1
+            with dissolve
             angela "But he's impressing me"
-            show cmax neutral with dissolve
+            show cmax excited with dissolve
             cmax "Me too"
             show angela neutral flip:
                 xpos 0.5
@@ -269,34 +286,43 @@ label straightAndNarrow3Office:
                 xpos 0.0
             with dissolve
             sam "Ah, that felt nice"
+            play sound "audio/sounds/applause.mp3"
             "CLAP! CLAP! CLAP! CLAP! CLAP!"
             sam "Sorry for the wait"
             sam "I hope you weren't too unconfortable"
             cmax "Not at all"
             angela "Nope, nope"
+            show sam happy with dissolve
             sam "That's great"
+            show sam neutral with dissolve
             sam "I think I got Superball to stop doing pitstops at the office when we're not there"
             hide cmax with dissolve
             sam "Also I got some information about the dimensional rift that the commissioner told us to investigate"
             sam "He said those were always there"
+            angela "Really?"
+            sam "Like they are part of the universe always and just never notice them"
             angela "So now those got bigger"
             sam "Probably"
             show sam neutral flip with dissolve:
                 xpos 0.1
             cmax "Sam?"
-            show cmax neutral with dissolve:
+            show cmax excited with dissolve:
                 xpos 0.0
             cmax "Did you make him cry?"
+            show sam unsure flip with dissolve
             sam "Ah..."
             sam "Yes?"
             cmax "SNIFF!"
             cmax "I'm so proud!"
+            show sam surprised flip with dissolve
             sam "No, Max, not in front of her!"
             angela "I don't mind"
             hide sam
             hide cmax
             hide angela
             with dissolve
+            scene straightAndNarrow3 background with dissolve
+            play music "audio/music/02 The Office.mp3" fadeout 2 fadein 1
         else:
             show sam unsure with dissolve
             sam "Still, I want to have a conversation with him but he never appears in front of us since..."
@@ -314,7 +340,7 @@ label straightAndNarrow3Office:
 
 label straightAndNarrow3Tardis:
     if straightAndNarrow3Angela:
-        show cmax neutral flip zorder 1 with dissolve:
+        show cmax thinking flip zorder 1 with dissolve:
             xpos 0.4
         cmax "What is this I'm feeling inside me?"
         cmax "It's like I wanna strangle her"
@@ -323,9 +349,10 @@ label straightAndNarrow3Tardis:
         cmax "But at the same time I'm not doing it because Sam would be..."
         cmax "sad?"
         cmax "Why it hurts so much?"
+        show angela happy flip with dissolve
         angela "You really care about him"
         hide angela with dissolve
-        show cmax neutral with dissolve
+        show cmax surprise with dissolve
         angela "I really hope you will be together for a long time"
         hide cmax with dissolve
         cmax "Wait, wait, what did you say?"
@@ -346,11 +373,14 @@ label straightAndNarrow3Tardis:
         show cmax neutral flip with dissolve:
             xpos 0.3
         sam "Wait"
+        play sound "audio/sounds/crashwall.mp3"
         "* CRASH *"
         sam "Are you alright?"
         show angela neutral with dissolve:
             xpos -0.1
         angela "Yes... I'm..."
+        stop music
+        play sound "audio/sounds/record-scratch.mp3"
         show sam surprised flip:
             xpos 0.2
         show angela surprised
@@ -363,8 +393,10 @@ label straightAndNarrow3Tardis:
         cmax "Sam please, you just rescued a girl it's no big deal"
         sam "Angela?"
         angela "Sam?"
+        play music "audio/music/Life Is for Living.mp3"
         show sam happy flip
         show angela happy
+        show screen notification("Life is for Living - Ivy-Rose Lyon ft. Maja Norming")
         with dissolve
         angela "What a coincidence!"
         angela "The commissioner never told me you were part of the Freelance Police!"
@@ -387,6 +419,8 @@ label straightAndNarrow3Tardis:
         sam "Those evil doers had no idea with who were messing with"
         angela "I have a taser"
         angela "I had to use it directly in their b.."
+        stop music
+        play sound "audio/sounds/record-scratch.mp3"
         show cmax annoyed flip with dissolve
         cmax "EJEM!"
         show sam neutral with dissolve
@@ -404,6 +438,7 @@ label straightAndNarrow3Tardis:
         sam "We met each other at Flight Stewardess School"
         show cmax surprise flip with dissolve
         cmax "What"
+        play music "audio/music/Life is for Living Intruments.mp3" fadein 1
         angela "We lost contact after I had to drop out for a family emergency"
         show sam neutral flip with dissolve
         sam "Everything is ok now, I hope"
@@ -463,6 +498,7 @@ label straightAndNarrow3Tardis:
         cmax "SAM!?"
         hide cmax with dissolve
         $ straightAndNarrow3Angela = True
+        play music "audio/music/02 The Office.mp3" fadeout 2 fadein 1
     call screen straightAndNarrow3 with dissolve
 
 

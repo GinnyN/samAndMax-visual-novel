@@ -26,8 +26,10 @@ label dimensionalRift3Menu:
             sam "Here you go little buddy"
             hide cmax with dissolve
             cmax "WHEEEEEEE"
+            play sound "audio/sounds/thermos-slide.mp3"
             show sam neutral with dissolve:
                 xpos 0.2
+            pause 0.5
             sam "Can you see anything Max?"
             cmax "AAannnGGnnAADDGGrrrRrrMMM"
             show sam happy with dissolve
@@ -43,6 +45,7 @@ label dimensionalRift3Menu:
             "..."
             show sam neutral with dissolve
             sam "Haive hoooooooooooo"
+            play sound "audio/sounds/zit-pop.mp3"
             "POP!"
             show sam neutral flip with dissolve:
                 xpos 0.2

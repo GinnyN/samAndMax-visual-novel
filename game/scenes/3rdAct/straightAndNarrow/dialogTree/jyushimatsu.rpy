@@ -5,21 +5,21 @@ label straightAndNarrow3MatsuTree:
 
     menu:
         "We wanna buy something":
-            call wannaBuySomething3
+            call wannaBuySomething3 from _call_wannaBuySomething3
         "How did you arrived here?" if straightAndNarrow3MatsuTeleport == 0:
-            call arrivedHere31
+            call arrivedHere31 from _call_arrivedHere31
             $ straightAndNarrow3MatsuTeleport = 1
         "When did you arrived here?" if straightAndNarrow3MatsuTeleport == 1:
-            call arrivedHere32
+            call arrivedHere32 from _call_arrivedHere32
             $ straightAndNarrow3MatsuTeleport = 2
         "Which Library exactly?" if straightAndNarrow3MatsuTeleport == 2:
-            call arrivedHere33
+            call arrivedHere33 from _call_arrivedHere33
             $ straightAndNarrow3MatsuLibrary = True
         "Do you have an extended family?" if straightAndNarrow3MatsuFamily == 0:
-            call matsuFamily31
+            call matsuFamily31 from _call_matsuFamily31
             $ straightAndNarrow3MatsuFamily = 1
         "Do you have assigned colors?" if straightAndNarrow3MatsuFamily == 1:
-            call matsuFamily32
+            call matsuFamily32 from _call_matsuFamily32
         "Good Bye":
             show sam neutral
             show cmax neutral

@@ -17,7 +17,9 @@ label straightAndNarrow1Start:
         show angela neutral with dissolve
         angela "The commissioner told me I have to give this briefing to them and they will know what to do"
         angela "I better hurry"
+        play music "audio/music/Let's Make It Easy.mp3"
         hide angela with dissolve
+        show screen notification("Let's Make It Easy - Nocturnal Spirits")
 
     call screen straightAndNarrow1 with dissolve
 
@@ -47,8 +49,10 @@ label straightAndNarrow1OfficeMenu:
                 else:
                     angela "Ok..."
                     hide angela with dissolve
+                    play sound "audio/sounds/door_open.mp3"
+                    pause 0.5
                     angela "Maybe this library card will be...."
-                    "** Alarm sounds **"
+                    play music "audio/sounds/alarm.mp3"
                     show angela unsure flip with dissolve:
                         xpos 0.4
                     angela "What the..."
@@ -66,7 +70,6 @@ label straightAndNarrow1Tardis:
     if not straightAndNarrow1TardisVisited:
         angela "It's this..."
         angela "A time machine??"
-        "creeeekkkk"
         show angela neutral flip with dissolve
         angela "No, it's a phonebooth"
         show angela thinking flip with dissolve
@@ -94,6 +97,7 @@ label straightAndNarrow1TardisMenu:
         "Call the Freelance Police" if straightAndNarrow1SuperballOfficeFreelancePoliceFolderTree == 2:
             show angela unsure flip with dissolve
             angela "Ok..."
+            stop music fadeout 1
             angela "Mmm..."
             angela "This is not a celular number though..."
             scene straightAndNarrow1 foreground
@@ -152,7 +156,7 @@ label straightAndNarrow1MatsuMenu:
             todomatsu "and I'm technically squatting..."
             show todomatsu neutral flip with dissolve
             todomatsu "but ok, give me money"
-            call straightAndNarrowBuySomethingTree
+            call straightAndNarrowBuySomethingTree from _call_straightAndNarrowBuySomethingTree
             
         "Back to the street":
             show angela neutral with dissolve

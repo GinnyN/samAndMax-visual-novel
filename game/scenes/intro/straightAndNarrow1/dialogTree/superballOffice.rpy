@@ -8,6 +8,7 @@ label straightAndNarrow1SuperballOffice:
         angela "They do have a very good alarm system"
         show superball neutral with dissolve:
             xpos 0.0
+        stop music fadeout 1
         superball "Please explain your motives to be here, before I have to get physical"
         show angela unsure flip with dissolve
         angela "The secret service?"
@@ -22,6 +23,7 @@ label straightAndNarrow1SuperballOffice:
         show angela neutral flip with dissolve
         angela "Well, that's explain why you haven't demolished this building yet"
         superball "We do believe the former president eated it"
+        play music "audio/music/Let's Make It Easy.mp3"
     else:
         show superball neutral with dissolve:
             xpos 0.0

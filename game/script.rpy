@@ -36,3 +36,10 @@ label dialog:
     call screen straightAndNarrow1
     ""
     return
+
+label splashscreen:
+    scene black
+    play music "audio/music/01 This Time It's Virtual.mp3" fadein 1 noloop
+    show menuImg
+    pause 6
+    return

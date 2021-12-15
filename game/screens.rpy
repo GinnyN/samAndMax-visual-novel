@@ -27,6 +27,8 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    hover_sound "audio/sounds/prepare.mp3"
+    activate_sound "audio/sounds/shot.mp3"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -218,7 +220,9 @@ define config.narrator_menu = True
 
 
 style choice_vbox is vbox
-style choice_button is button
+style choice_button is button:
+    hover_sound "audio/sounds/button_hover.mp3"
+    activate_sound "audio/sounds/button_select.mp3"
 style choice_button_text is button_text
 
 style choice_vbox:
@@ -1231,6 +1235,25 @@ transform delayed_blink(delay, cycle):
         pause (cycle - .4)
         repeat
 
+
+screen notification(msg):
+
+    zorder 100
+    style_prefix "skip"
+
+    frame at nt_appear:
+        hbox:
+            spacing 6
+            text _(msg)
+    
+    timer 3.25 action Hide('notification')
+
+transform nt_appear:
+    on show:
+        alpha 0
+        linear .5 alpha 1.0
+    on hide:
+        linear .5 alpha 0.0
 
 style skip_frame is empty
 style skip_text is gui_text

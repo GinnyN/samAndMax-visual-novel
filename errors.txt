@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 47: end of line expected.
-    with dissolve:
-                 ^
+File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 240: expected statement.
+    spot music
+              ^
 
-Ren'Py Version: Ren'Py 7.3.5.606
-Tue Feb 16 22:10:29 2021
+Ren'Py Version: Ren'Py 7.4.11.2266
+Tue Dec 14 20:34:12 2021
