@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 240: expected statement.
-    spot music
-              ^
+File "game/scenes/3rdAct/library/dialogTree.rpy", line 2: expected 'label_name' not found.
+    call scene library3 with dissolve
+        ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Dec 14 20:34:12 2021
+Wed Dec 29 20:39:58 2021

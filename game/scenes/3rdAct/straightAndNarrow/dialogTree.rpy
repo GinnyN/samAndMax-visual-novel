@@ -5,6 +5,10 @@ define straightAndNarrow3ScaredSuperball = False
 
 label straightAndNarrow3Back:
     scene straightAndNarrow3 background with dissolve
+    if museum3AngelaBack:
+        angela "Oh.."
+        angela "Hello guys..."
+        $ museum3AngelaBack = False
     call screen straightAndNarrow3 with dissolve
 
 label straightAndNarrow3FastTravel:
@@ -22,9 +26,32 @@ label straightAndNarrow3FastTravel:
                 cmax "Ok"
             "The Museum of Mostly Natural History":
                 sam "The Museum of Mostly Natural History"
-                show sam neutral with dissolve
-                sam "If that place were already programmed that it"
-                cmax "Maybe next patch Sam"
+                cmax "Yeah, I also need a nap"
+                if straightAndNarrow3ScaredSuperball and straightAndNarrow3Angela:
+                    angela "This is good bye then"
+                    sam "What?"
+                    angela "I'm checking the time, and I need to be somewhere else"
+                    angela "But I know with you guys the case is in good hands"
+                    cmax "Do she really knows you?"
+                    sam "But... but I thought..."
+                    angela "I'll call later Sam"
+                    sam "You said the same when you went on a roaring rampage of revenge of those years ago!"
+                    angela "..."
+                    angela "I was worried about the cartels..."
+                    sam "We can handle that"
+                    cmax "Why are you assuming I have any interest on this?"
+                    angela "I'll call tomorrow"
+                    angela "If I don't call, you ask the comissioner"
+                    sam "Well..."
+                    sam "Oh, alright"
+                    angela "Take care guys!"
+                    angela "And smash those dimension annomalies!"
+                    $ straightAndNarrow3Angela = False
+                    $ museum3AngelaStays = True
+
+                stop music fadeout 2
+                jump museum3Start
+                
     else:
         sam "Nowhere"
         sam "I just noticed we have a new blood stain in the passenger seat"

@@ -1,20 +1,118 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-OSError: [Errno 2] No such file or directory
+While running game code:
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 24, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 169, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree/superballOffice.rpy", line 94, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
+    call screen straightAndNarrow2 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 3, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 134, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 366, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 158, in script
+    menu:
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 219, in <module>
+    "Have you heard about Superball?" if straightAndNarrow3ScaredSuperball == false:
+NameError: name 'false' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Applications/renpy-7.3.5-sdk/renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "/Applications/renpy-7.3.5-sdk/renpy/main.py", line 612, in main
-    renpy.dump.dump(False)
-  File "/Applications/renpy-7.3.5-sdk/renpy/dump.py", line 260, in dump
-    os.rename(new, filename)
-OSError: [Errno 2] No such file or directory
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 24, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 169, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree/superballOffice.rpy", line 94, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
+    call screen straightAndNarrow2 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 3, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 134, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 366, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 158, in script
+    menu:
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1688, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "/Applications/renpy-7.3.5-sdk/renpy/exports.py", line 1026, in menu
+    condition = renpy.python.py_eval(condition)
+  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 219, in <module>
+    "Have you heard about Superball?" if straightAndNarrow3ScaredSuperball == false:
+NameError: name 'false' is not defined
 
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
 Sam & Max in: Psychic Directive & Lighting Soldier 0.0
-Tue Dec 14 21:31:14 2021
+Thu Jan 27 23:05:37 2022

@@ -1,33 +1,200 @@
-Tue Dec 14 23:56:51 2021
+Thu Jan 27 23:04:41 2022
 Darwin-20.6.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.12s
-Early init took 0.01s
-Loader init took 0.14s
-Loading error handling took 0.24s
-Loading script took 2.37s
-Loading save slot metadata. took 0.02s
+Bootstrap to the start of init.init took 0.10s
+Early init took 0.76s
+Loader init took 0.43s
+Loading error handling took 0.29s
+Loading script took 1.76s
+Loading save slot metadata. took 0.65s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.22s
-Loading analysis data took 0.00s
-Analyze and compile ATL took 0.01s
+Running init code took 0.32s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to '/Users/ginnyn/Library/RenPy/backups/samMaxFanGame':
-Dump and make backups. took 0.23s
+Backing up script files to '/Users/ginnyn/Library/RenPy/backups/samAndMax-visual-novel':
+Dump and make backups. took 0.19s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.09s
+Cleaning stores took 0.00s
+Init translation took 0.19s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 14.74s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 640'
+Version: '2.1 INTEL-16.5.2'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 24, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 169, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree/superballOffice.rpy", line 94, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
+    call screen straightAndNarrow2 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 3, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 134, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 366, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 158, in script
+    menu:
+  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1688, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "/Applications/renpy-7.3.5-sdk/renpy/exports.py", line 1026, in menu
+    condition = renpy.python.py_eval(condition)
+  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 219, in <module>
+    "Have you heard about Superball?" if straightAndNarrow3ScaredSuperball == false:
+NameError: name 'false' is not defined
+
+While running game code:
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 24, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 169, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/intro/straightAndNarrow1/dialogTree/superballOffice.rpy", line 94, in script call
+    call screen straightAndNarrow1 with dissolve
+  File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
+    call screen straightAndNarrow2 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 3, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 134, in script call
+    call screen dimensionalRift3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 366, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 158, in script
+    menu:
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 219, in <module>
+    "Have you heard about Superball?" if straightAndNarrow3ScaredSuperball == false:
+NameError: name 'false' is not defined
+Resetting cache.
+Bootstrap to the start of init.init took 84.57s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.19s
+Loading script took 1.33s
+Loading save slot metadata. took 0.54s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.16s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/Users/ginnyn/Library/RenPy/backups/samAndMax-visual-novel':
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.04s
 DPI scale factor: 1.000000
-Creating interface object took 0.10s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.06s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.07s
+Load screen analysis took 0.04s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel Inc.'
+Renderer: 'Intel(R) Iris(TM) Plus Graphics 640'
+Version: '2.1 INTEL-16.5.2'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Maximum texture size: 4096x4096
