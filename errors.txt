@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/scenes/3rdAct/library/dialogTree.rpy", line 2: expected 'label_name' not found.
-    call scene library3 with dissolve
-        ^
+File "game/scenes/3rdAct/library/dialogTree.rpy", line 40: expected statement.
+    "What are you doing under a table?" if library3IchimatsuTalks == 0:
+                                        ^
+
+File "game/scenes/3rdAct/library/dialogTree.rpy", line 1: unexpected EOF while parsing
+    0:
+      ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Dec 29 20:39:58 2021
+Wed Apr  6 09:52:26 2022

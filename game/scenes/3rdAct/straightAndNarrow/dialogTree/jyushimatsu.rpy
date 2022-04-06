@@ -1,5 +1,7 @@
 define straightAndNarrow3MatsuTeleport = 0
 define straightAndNarrow3MatsuFamily = 0
+define straightAndNarrow2MatsuHoles = 0
+define shootingMatsus = False
 
 label straightAndNarrow3MatsuTree:
 
@@ -20,6 +22,12 @@ label straightAndNarrow3MatsuTree:
             $ straightAndNarrow3MatsuFamily = 1
         "Do you have assigned colors?" if straightAndNarrow3MatsuFamily == 1:
             call matsuFamily32 from _call_matsuFamily32
+        "Do you know anything about that hole?" if museum3MaddieTalk and straightAndNarrow2MatsuHoles == 0:
+            $ straightAndNarrow2MatsuHoles = 1
+            call museumMaddieInfoJyushi31
+        "Are you sure you don't know anything about this hole?" if straightAndNarrow2MatsuHoles == 1 and shootingMatsus == False:
+            $ shootingMatsus = True
+            call museumMaddieInfoJyushi32
         "Good Bye":
             show sam neutral
             show cmax neutral
@@ -36,6 +44,62 @@ label straightAndNarrow3MatsuTree:
 
     jump straightAndNarrow3MatsuTree
 return
+
+label museumMaddieInfoJyushi31:
+    sam "Have you heard about the hole outside?"
+    jyushimatsu "A hole?"
+    cmax "A big colored hole that feels like a badly washed sweater"
+    jyushimatsu "A hole!"
+    jyushimatsu "I thought I finally appeared in a place without one, but no!"
+    sam "Do you know why that it is?"
+    jyushimatsu "Nooooooooooooo"
+    jyushimatsu "I know about my family"
+    jyushimatsu "I know we're *"
+    jyushimatsu "But I don't remember anything about hoooleeessss"
+    sam "Do you need some motivation?"
+    cmax "My pliers are in Canada right now"
+    cmax "But I can figure out something else if its funny enough"
+    jyushimatsu "Nah, that's not as painful as *************** in a weird day"
+    jyushimatsu "But I think ************** said something about colors..."
+    jyushimatsu "And holes...."
+    jyushimatsu "And stuff..."
+    sam "What did he said?"
+    jyushimatsu "I don't know"
+    jyushimatsu "I wasn't paying attention"
+    jyushimatsu "He's trash!"
+    "..."
+    sam "Well..."
+    cmax "I found a broken bottle!"
+    sam "Ok, what its his hue at least"
+    jyushimatsu "Can I say it?"
+    jyushimatsu "Mmmmmm...."
+    jyushimatsu "Red?!"
+    cmax "No, wait, I found some of Bosco's fan fics about aliens!"
+    cmax "That must work!"
+    sam "Oh, so you can say their hue"
+    jyushimatsu "I'm surprised myself!"
+    return
+
+label museumMaddieInfoJyushi32:
+    sam "Are you completely sure you don't know a way to close those holes?"
+    jyushimatsu "I don't know!"
+    jyushimatsu "Have you tried killing us?"
+    sam "Actually..."
+    sam "No..."
+    cmax "Let me try!"
+    "* SHOT! *"
+    jyushimatsu "I'm still alive!"
+    cmax "Awwww..."
+    cmax "Why we need to use brains to solve this..."
+    cmax "Again!"
+    sam "I don't know Max, maybe we're cursed"
+    jyushimatsu "Maybe you are shooting the wrong one"
+    sam "That's a good point"
+    cmax "I'm going to shoot the rest of your brothers on sight"
+    jyushimatsu "Now I'm realizing what I just did"
+    cmax "Too late!"
+    return
+
 
 label matsuFamily31:
     show sam unsure

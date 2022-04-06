@@ -222,7 +222,7 @@ label museum3PaperwaiteMenu:
             sam "It feels like he's spending way too much time in the office for my liking"
             papierwaite "Isn't still the oval office?"
             sam "Yes, but it was before my office"
-            papierwaite "We're not friends, so we haven't talk again since Syvil children was born"
+            papierwaite "We're not friends, so we haven't talk again since Sybil children was born"
             papierwaite "Do you think he might know something about this dimensional rifts?"
             sam "I mean, I'm fairly sure he knows a lot about time traveling"
             sam "It wouldn't be too much of a stretch to believe he knows about dimensional rifts"
@@ -261,6 +261,10 @@ label museum3PaperwaiteMenu:
             papierwaite "That was the idea!"
             cmax "Good to know!"
             $ museum3Superball = museum3Superball + 1
+        "See you later!" :
+            papierwaite "Fine fine..."
+            papierwaite "Just let me finish with this call..."
+            jump museum3Start
 
 
     jump museum3PaperwaiteMenu
