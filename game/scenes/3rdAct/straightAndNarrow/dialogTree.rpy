@@ -51,7 +51,22 @@ label straightAndNarrow3FastTravel:
 
                 stop music fadeout 2
                 jump museum3Start
-                
+            "To the Week without Sleep Memorial Park" if library3IchimatsuTalks == 4:
+                sam "To the park to find a building with a weird red shadow!"
+                "Car starts"
+                "Sounds of electricity"
+                sam "We cannot arrive from here"
+                sam "There's a barrier which impides us to go there"
+                cmax "I think I did saw some cars going there"
+                cmax "This is unfair!"
+                sam "It is"
+                sam "But maybe they are trying to tell us something"
+                cmax "Like hell!"
+                cmax "My extra voices aren't from nowhere"
+                cmax "I know perfectly from where they are"
+                sam "And a strong sense of justice doesn't seem to count as a diversity of any neurons"
+                sam "So, we're stuck"
+                cmax "Stupid lings that change"
     else:
         sam "Nowhere"
         sam "I just noticed we have a new blood stain in the passenger seat"
@@ -383,6 +398,9 @@ label straightAndNarrow3Tardis:
         angela "I really hope you will be together for a long time"
         hide cmax with dissolve
         cmax "Wait, wait, what did you say?"
+    elif straightAndNarrow3ScaredSuperball:
+        sam "A non functioning time machine"
+        sam "Still works as a payphone, though"
     else:
         angela "Hello??"
         show sam unsure flip with dissolve:

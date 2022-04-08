@@ -7,6 +7,7 @@ define museum3MaddieTalk = False
 
 define museum3Changelings = 1
 define museum3Superball = 1
+define museum3ChangelingVoice = 1
 
 label museum3Start:
     scene museum3 background with dissolve
@@ -61,6 +62,8 @@ label museum3Desoto:
                 play music "audio/music/02 The Office.mp3" fadeout 2 fadein 1
                 $ museum3AngelaBack = True
                 jump straightAndNarrow3Back
+            "To the Week without Sleep Memorial Park" if library3IchimatsuTalks == 4:
+                jump library3ToTheMemorialPark
             "Ehhh... maybe later":
                 cmax "Too much for care about her"
                 sam "It's not that Max..."
@@ -75,6 +78,22 @@ label museum3Desoto:
                 cmax "Not if I do first!"
                 play music "audio/music/02 The Office.mp3" fadeout 2 fadein 1
                 jump straightAndNarrow3Back
+            "To the Week without Sleep Memorial Park" if library3IchimatsuTalks == 4:
+                label library3ToTheMemorialPark:
+                    sam "To the park to find a building with a weird red shadow!"
+                    "Car starts"
+                    "Sounds of electricity"
+                    cmax "What just happened?"
+                    sam "There's a barrier which impide us to go directly from here"
+                    sam "Not even the Demon possesed Desoto can go there"
+                    cmax "That's bad, right?"
+                    sam "Yes!"
+                    sam "Yesterday it went around there to pick up some prius"
+                    sam "So, I don't know why it can't go there anymore"
+                    cmax "I would say it's embarrased of something"
+                    cmax "But I know its less shameful than I'm"
+                    sam "That one way to say it little buddy"
+                    jump museum3Start
             "Nowhere":
                 sam "Just considering options"
                 cmax "Meandering around is a good technique"
@@ -216,6 +235,26 @@ label museum3PaperwaiteMenu:
             sam "Yeah, but we don't need to always be the ones carrying the conversations"
             cmax "Eh, I just don't like it"
             $ museum3Changelings = museum3Changelings + 1
+        "Do you know about a Voice from Nowhere?" if library3IchimatsuTalks > 2 and museum3ChangelingVoice == 1:
+            papierwaite "It's the first time I heard that concept"
+            papierwaite "Where did you heard it?"
+            sam "The Purple Shadow from the Library says you have a Voice from Nowhere with you, or something"
+            norrington "Oh.... ********* is talking about me"
+            norrington "He can heard me when I try to talk on Papierwaite's Brain in his presence"
+            norrington "I guess that's why he's saying I'm a voice from nowhere"
+            cmax "I think because the Visual Novel Writer forgot how to write a word!"
+            norrington "That also"
+            papierwaite "Why are you asking about it?"
+            sam "The Purple one says his brother the red one knows how to solve this"
+            sam "He only knows they need a 'Changeling without a Voice from Nowhere'"
+            papierwaite "I knew it"
+            $ museum3ChangelingVoice = 2
+        "You knew what?!" if museum3ChangelingVoice == 2:
+            papierwaite "That they need a body to trap anything they workship"
+            cmax "How do you know they are workshiping anything?"
+            papierwaite "..."
+            papierwaite "I'm a cult member"
+            cmax "oh..."
         "Have you heard about Superball?" if straightAndNarrow3ScaredSuperball == False:
             norrington "Why are you asking about him?"
             sam "You see..."
@@ -261,6 +300,48 @@ label museum3PaperwaiteMenu:
             papierwaite "That was the idea!"
             cmax "Good to know!"
             $ museum3Superball = museum3Superball + 1
+        "To Recap" if museum3ChangelingVoice == 2 and museum3Superball > 1 and museum3MaddieTalk:
+            sam "Superball says the holes always existed"
+            sam "You say the only way that holes are getting bigger is because some super natural being is trying to conquer the earth"
+            sam "And that little girl says that the shadows are from the holes"
+            norrington "Maddie said that?"
+            cmax "Yes?"
+            sam "You know her?"
+            norrington "Of course"
+            norrington "She's a changeling"
+            norrington "She's semi verbal though, so every single time she comes to the museum, I end up reading her brain when she needs something"
+            papierwaite "I have told her to bring a notebook"
+            papierwaite "She's very expressive in writing form"
+            sam "I know it's your job to talk with people visiting the museum, but..."
+            sam "This feels really bad"
+            papierwaite "Why?!"
+            cmax "You are a cult member"
+            papierwaite "Oh"
+            sam "Anyway..."
+            sam "It seems a powerful spirit came to earth"
+            sam "Opened those dimensions holes to create the shadows"
+            sam "So they could find a body to possess"
+            sam "And only can be a Changeling that cannot be already possesed by something else"
+            norrington "This spirit cannot be too strong yet"
+            norrington "The ******* brothers cannot move from their position"
+            cmax "Random thought"
+            cmax "What about we find a changedlily without alucinations as a bait" 
+            cmax "so the shadows will guide us to their boss"
+            sam "That's a plan"
+            sam "We only need something else to trap the spirit which is not the changeling"
+            sam "Any idea you two?"
+            "..."
+            sam "Why so nervious..."
+            papierwaite "I... need... to... check... some... books... to find... something..."
+            cmax "Oh, good!"
+            cmax "Now we need to find a switchling without inner voices!"
+            cmax "Do you know one?!"
+            "..."
+            sam "The doctor's date doesn't have voices, isn't it?"
+            cmax "You already knew everything Sam just said!"
+            norrington "Her soul is so fragile, I don't want to involve her on this"
+            sam "At least let us ASK her"
+            norrington "I... I..."
         "See you later!" :
             papierwaite "Fine fine..."
             papierwaite "Just let me finish with this call..."

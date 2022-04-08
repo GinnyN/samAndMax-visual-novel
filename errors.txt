@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/scenes/3rdAct/library/dialogTree.rpy", line 40: expected statement.
-    "What are you doing under a table?" if library3IchimatsuTalks == 0:
-                                        ^
+File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 401: expected ':' not found.
+    else if straightAndNarrow3ScaredSuperball:
+         ^
 
-File "game/scenes/3rdAct/library/dialogTree.rpy", line 1: unexpected EOF while parsing
-    0:
-      ^
+File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 404: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Apr  6 09:52:26 2022
+Thu Apr  7 21:48:40 2022
