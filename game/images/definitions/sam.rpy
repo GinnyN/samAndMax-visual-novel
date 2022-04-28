@@ -12,3 +12,5 @@ image sam surprised = 'images/characters/sam/surprised.png'
 image sam surprised flip = im.Flip("images/characters/sam/surprised.png", horizontal=True)
 image sam unsure = 'images/characters/sam/unsure.png'
 image sam unsure flip = im.Flip("images/characters/sam/unsure.png", horizontal=True)
+image sam explain = 'images/characters/sam/explain.png'
+image sam explain flip = im.Flip("images/characters/sam/explain.png", horizontal=True)

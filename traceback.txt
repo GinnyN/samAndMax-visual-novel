@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
+While loading <'Image' u'images/scene/shoot-jyushimatsu.png'>:
   File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 24, in script call
     call screen straightAndNarrow1 with dissolve
   File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 169, in script call
@@ -9,11 +9,53 @@ While running game code:
     call screen straightAndNarrow1 with dissolve
   File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
     call screen straightAndNarrow2 with dissolve
+  File "game/scenes/2ndAct/dimensionalRift/dialogTree.rpy", line 3, in script call
+    call screen dimensionalRift with dissolve
+  File "game/scenes/2ndAct/dimensionalRift/dialogTree.rpy", line 25, in script call
+    call screen dimensionalRift with dissolve
+  File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
+    call screen straightAndNarrow2 with dissolve
   File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
     call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 86, in script call
     call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 86, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
     call screen straightAndNarrow3 with dissolve
   File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 3, in script call
     call screen dimensionalRift3 with dissolve
@@ -21,35 +63,11 @@ While running game code:
     call screen dimensionalRift3 with dissolve
   File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
     call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 366, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 158, in script
-    menu:
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 219, in <module>
-    "Have you heard about Superball?" if straightAndNarrow3ScaredSuperball == false:
-NameError: name 'false' is not defined
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree/jyushimatsu.rpy", line 30, in script call
+    call museumMaddieInfoJyushi32
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree/jyushimatsu.rpy", line 113, in script
+    cmax "Why we need to use brains to solve this..."
+IOError: Couldn't find file 'images/scene/shoot-jyushimatsu.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -62,11 +80,53 @@ Full traceback:
     call screen straightAndNarrow1 with dissolve
   File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
     call screen straightAndNarrow2 with dissolve
+  File "game/scenes/2ndAct/dimensionalRift/dialogTree.rpy", line 3, in script call
+    call screen dimensionalRift with dissolve
+  File "game/scenes/2ndAct/dimensionalRift/dialogTree.rpy", line 25, in script call
+    call screen dimensionalRift with dissolve
+  File "game/scenes/2ndAct/straightAndNarrow2/dialogTree.rpy", line 52, in script call
+    call screen straightAndNarrow2 with dissolve
   File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
     call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 86, in script call
     call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 86, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/library/dialogTree.rpy", line 7, in script call
+    call screen library3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
+    call screen straightAndNarrow3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 82, in script call
+    call screen museum3 with dissolve
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
     call screen straightAndNarrow3 with dissolve
   File "game/scenes/3rdAct/dimensionalRift/dialogTree.rpy", line 3, in script call
     call screen dimensionalRift3 with dissolve
@@ -74,45 +134,61 @@ Full traceback:
     call screen dimensionalRift3 with dissolve
   File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
     call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 529, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 67, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 12, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 366, in script call
-    call screen straightAndNarrow3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 40, in script call
-    call screen museum3 with dissolve
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 158, in script
-    menu:
-  File "/Applications/renpy-7.3.5-sdk/renpy/ast.py", line 1688, in execute
-    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
-  File "/Applications/renpy-7.3.5-sdk/renpy/exports.py", line 1026, in menu
-    condition = renpy.python.py_eval(condition)
-  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2276, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/Applications/renpy-7.3.5-sdk/renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/scenes/3rdAct/museum/dialogTree.rpy", line 219, in <module>
-    "Have you heard about Superball?" if straightAndNarrow3ScaredSuperball == false:
-NameError: name 'false' is not defined
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree/jyushimatsu.rpy", line 30, in script call
+    call museumMaddieInfoJyushi32
+  File "game/scenes/3rdAct/straightAndNarrow/dialogTree/jyushimatsu.rpy", line 113, in script
+    cmax "Why we need to use brains to solve this..."
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/character.py", line 901, in do_display
+    **display_args)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/core.py", line 3839, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/core.py", line 2565, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/transform.py", line 733, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/image.py", line 501, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/image.py", line 307, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/im.py", line 625, in render
+    return cache.get(self, render=True)
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/im.py", line 287, in get
+    surf = image.load()
+  File "/Users/ginnyn/Desktop/renpy-7.4.11-sdk/renpy/display/im.py", line 706, in load
+    raise e
+IOError: Couldn't find file 'images/scene/shoot-jyushimatsu.png'.
 
-Darwin-20.6.0-x86_64-i386-64bit
+Darwin-21.1.0-x86_64-i386-64bit
 Ren'Py 7.4.11.2266
 Sam & Max in: Psychic Directive & Lighting Soldier 0.0
-Thu Jan 27 23:05:37 2022
+Thu Apr 21 22:43:03 2022

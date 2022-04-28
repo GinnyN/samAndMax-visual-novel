@@ -24,10 +24,10 @@ label straightAndNarrow3MatsuTree:
             call matsuFamily32 from _call_matsuFamily32
         "Do you know anything about that hole?" if museum3MaddieTalk and straightAndNarrow2MatsuHoles == 0:
             $ straightAndNarrow2MatsuHoles = 1
-            call museumMaddieInfoJyushi31
+            call museumMaddieInfoJyushi31 from _call_museumMaddieInfoJyushi31
         "Are you sure you don't know anything about this hole?" if straightAndNarrow2MatsuHoles == 1 and shootingMatsus == False:
             $ shootingMatsus = True
-            call museumMaddieInfoJyushi32
+            call museumMaddieInfoJyushi32 from _call_museumMaddieInfoJyushi32
         "Good Bye":
             show sam neutral
             show cmax neutral
@@ -47,8 +47,10 @@ return
 
 label museumMaddieInfoJyushi31:
     sam "Have you heard about the hole outside?"
+    show jyushimatsu sarcastic flip with dissolve
     jyushimatsu "A hole?"
     cmax "A big colored hole that feels like a badly washed sweater"
+    show jyushimatsu neutral flip with dissolve
     jyushimatsu "A hole!"
     jyushimatsu "I thought I finally appeared in a place without one, but no!"
     sam "Do you know why that it is?"
@@ -58,6 +60,7 @@ label museumMaddieInfoJyushi31:
     jyushimatsu "But I don't remember anything about hoooleeessss"
     sam "Do you need some motivation?"
     cmax "My pliers are in Canada right now"
+    hide cmax with dissolve
     cmax "But I can figure out something else if its funny enough"
     jyushimatsu "Nah, that's not as painful as *************** in a weird day"
     jyushimatsu "But I think ************** said something about colors..."
@@ -68,36 +71,71 @@ label museumMaddieInfoJyushi31:
     jyushimatsu "I wasn't paying attention"
     jyushimatsu "He's trash!"
     "..."
+    show sam serious with dissolve
     sam "Well..."
     cmax "I found a broken bottle!"
     sam "Ok, what its his hue at least"
+    show jyushimatsu sarcastic flip with dissolve
     jyushimatsu "Can I say it?"
     jyushimatsu "Mmmmmm...."
     jyushimatsu "Red?!"
     cmax "No, wait, I found some of Bosco's fan fics about aliens!"
+    show cmax neutral:
+        xpos 0.1
+    with dissolve
     cmax "That must work!"
+    show sam neutral with dissolve
     sam "Oh, so you can say their hue"
+    show jyushimatsu neutral flip with dissolve
     jyushimatsu "I'm surprised myself!"
     return
 
 label museumMaddieInfoJyushi32:
+    show sam neutral
+    show cmax neutral
+    show jyushimatsu neutral flip
+    with dissolve
     sam "Are you completely sure you don't know a way to close those holes?"
+    show jyushimatsu sarcastic flip with dissolve
     jyushimatsu "I don't know!"
     jyushimatsu "Have you tried killing us?"
+    show sam unsure with dissolve
     sam "Actually..."
+    show sam neutral with dissolve
     sam "No..."
+    show cmax excited with dissolve
     cmax "Let me try!"
-    "* SHOT! *"
+    play sound "audio/sounds/shot.mp3"
+    scene shootJyushimatsu with hpunch
+    show jyushimatsu neutral flip:
+        xpos 0.5
+    with dissolve
     jyushimatsu "I'm still alive!"
+    show cmax aww zorder 1 with dissolve:
+        xpos 0.1
     cmax "Awwww..."
     cmax "Why we need to use brains to solve this..."
     cmax "Again!"
+    show sam neutral zorder 0 with dissolve:
+        xpos -0.1
     sam "I don't know Max, maybe we're cursed"
     jyushimatsu "Maybe you are shooting the wrong one"
     sam "That's a good point"
+    show cmax neutral with dissolve
     cmax "I'm going to shoot the rest of your brothers on sight"
+    show jyushimatsu sad flip
+    with dissolve
     jyushimatsu "Now I'm realizing what I just did"
+    show cmax ohyeah with dissolve
     cmax "Too late!"
+    scene straightAndNarrow3 background
+    show sam neutral:
+        xpos -0.1
+    show cmax neutral:
+        xpos 0.1
+    show jyushimatsu neutral flip:
+        xpos 0.5
+    with dissolve
     return
 
 

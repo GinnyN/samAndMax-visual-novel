@@ -16,3 +16,5 @@ image angela surprised = 'images/characters/angela/surprised.png'
 image angela surprised flip = im.Flip("images/characters/angela/surprised.png", horizontal=True)
 image angela well = 'images/characters/angela/well.png'
 image angela well flip = im.Flip("images/characters/angela/well.png", horizontal=True)
+image angela uhh = 'images/characters/angela/uhh.png'
+image angela uhh flip = im.Flip("images/characters/angela/uhh.png", horizontal=True)

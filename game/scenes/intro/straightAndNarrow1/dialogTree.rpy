@@ -101,7 +101,7 @@ label straightAndNarrow1TardisMenu:
             angela "Mmm..."
             angela "This is not a celular number though..."
             scene straightAndNarrow1 foreground
-            $ renpy.movie_cutscene("video/enterSamAndMax.webm")
+            # $ renpy.movie_cutscene("video/enterSamAndMax.webm")
             jump straightAndNarrow2Start
         "Back to the street":
             hide angela with dissolve

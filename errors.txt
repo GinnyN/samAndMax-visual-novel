@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 401: expected ':' not found.
-    else if straightAndNarrow3ScaredSuperball:
-         ^
-
-File "game/scenes/3rdAct/straightAndNarrow/dialogTree.rpy", line 404: expected statement.
-    else:
-        ^
+File "game/scenes/intro/straightAndNarrow1/dialogTree.rpy", line 104: expected python code
+    $ 
+      ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Apr  7 21:48:40 2022
+Wed Apr 20 22:52:16 2022

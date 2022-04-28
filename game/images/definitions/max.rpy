@@ -18,3 +18,7 @@ image cmax annoyed = 'images/characters/max/annoyed.png'
 image cmax annoyed flip = im.Flip("images/characters/max/annoyed.png", horizontal=True)
 image cmax angrySurprised = 'images/characters/max/angrySurprised.png'
 image cmax angrySurprised flip = im.Flip("images/characters/max/angrySurprised.png", horizontal=True)
+image cmax isAdorable = 'images/characters/max/isAdorable.png'
+image cmax isAdorable flip = im.Flip("images/characters/max/isAdorable.png", horizontal=True)
+image cmax menacing = 'images/characters/max/menacing.png'
+image cmax menacing flip = im.Flip("images/characters/max/menacing.png", horizontal=True)

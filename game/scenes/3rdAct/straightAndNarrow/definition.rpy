@@ -2,6 +2,8 @@ image straightAndNarrow3 background = "images/backgrounds/straightAndNarrow2/idl
 image straightAndNarrow3 background crash = "images/backgrounds/straightAndNarrow2/ground.png"
 image straightAndNarrow3 cinematic = "images/cinematic/outoffice.png"
 
+image shootJyushimatsu = "images/cinematic/shoot-jyushimatsu.png"
+
 screen straightAndNarrow3():
 
     tag gameScene

@@ -6,17 +6,20 @@ define straightAndNarrow3ScaredSuperball = False
 label straightAndNarrow3Back:
     scene straightAndNarrow3 background with dissolve
     if museum3AngelaBack:
+        show angela uhh flip with dissolve:
+            xpos 0.4
         angela "Oh.."
         angela "Hello guys..."
+        hide angela with dissolve
         $ museum3AngelaBack = False
     call screen straightAndNarrow3 with dissolve
 
 label straightAndNarrow3FastTravel:
     scene straightAndNarrow3 background with dissolve
-    show cmax neutral flip with dissolve:
+    show cmax neutral flip zorder 2 with dissolve:
         xpos 0.4
     cmax "Where we going Sam?"
-    show sam neutral flip with dissolve:
+    show sam neutral flip zorder 1 with dissolve:
         xpos 0.0
     if straightAndNarrow3MatsuLibrary:
         menu: 
@@ -28,33 +31,64 @@ label straightAndNarrow3FastTravel:
                 sam "The Museum of Mostly Natural History"
                 cmax "Yeah, I also need a nap"
                 if straightAndNarrow3ScaredSuperball and straightAndNarrow3Angela:
+                    show angela uhh flip zorder 0 with dissolve:
+                        xpos 0.4
                     angela "This is good bye then"
+                    show sam surprised
+                    show cmax neutral:
+                        xpos 0.2
+                    with dissolve
                     sam "What?"
                     angela "I'm checking the time, and I need to be somewhere else"
                     angela "But I know with you guys the case is in good hands"
+                    show cmax thinking with dissolve
                     cmax "Do she really knows you?"
                     sam "But... but I thought..."
                     angela "I'll call later Sam"
+                    show sam serious with dissolve
                     sam "You said the same when you went on a roaring rampage of revenge of those years ago!"
                     angela "..."
                     angela "I was worried about the cartels..."
                     sam "We can handle that"
+                    show cmax annoyed flip with dissolve
+                    show angela thinking flip with dissolve
                     cmax "Why are you assuming I have any interest on this?"
+                    show angela neutral flip with dissolve
                     angela "I'll call tomorrow"
                     angela "If I don't call, you ask the comissioner"
                     sam "Well..."
+                    show sam neutral with dissolve
                     sam "Oh, alright"
+                    show cmax neutral
+                    hide angela
+                    with dissolve
                     angela "Take care guys!"
                     angela "And smash those dimension annomalies!"
                     $ straightAndNarrow3Angela = False
                     $ museum3AngelaStays = True
-
+                hide cmax
+                hide sam
+                with dissolve
+                play sound "audio/sounds/car_driveoff.mp3"
+                pause 1
                 stop music fadeout 2
                 jump museum3Start
             "To the Week without Sleep Memorial Park" if library3IchimatsuTalks == 4:
                 sam "To the park to find a building with a weird red shadow!"
+                hide cmax
+                hide sam
+                with dissolve
+                play sound "audio/sounds/car_driveoff.mp3"
                 "Car starts"
+                play sound "audio/sounds/electricity.mp3"
                 "Sounds of electricity"
+                play sound "audio/sounds/tires-squeal.mp3"
+                pause 1
+                show sam suspicious flip:
+                    xpos 0.4
+                show cmax angrySurprised flip:
+                    xpos 0.1
+                with dissolve
                 sam "We cannot arrive from here"
                 sam "There's a barrier which impides us to go there"
                 cmax "I think I did saw some cars going there"
@@ -65,7 +99,9 @@ label straightAndNarrow3FastTravel:
                 cmax "My extra voices aren't from nowhere"
                 cmax "I know perfectly from where they are"
                 sam "And a strong sense of justice doesn't seem to count as a diversity of any neurons"
+                show sam neutral flip with dissolve
                 sam "So, we're stuck"
+                show cmax bored with dissolve
                 cmax "Stupid lings that change"
     else:
         sam "Nowhere"
